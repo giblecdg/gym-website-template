@@ -23,5 +23,5 @@ A modern, responsive gym website showcasing various services, pricing, customer 
 
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/your-gym.git
+   git clone https://github.com/giblecdg/gym-website-template
    ```
