@@ -151,7 +151,6 @@ footer {
 .remember-me label {
     margin-left: 5px;
     font-weight: 300;
-    font-size: 15px;
 }
 
 .remember-and-forgot {
@@ -165,7 +164,6 @@ footer {
     text-decoration: none;
     color: white;
     font-weight: 300;
-    font-size: 15px;
 }
 
 .input-submit {
@@ -212,4 +210,55 @@ footer {
     text-decoration: none;
     color: white;
     font-weight: 850;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header a {
+        font-size: 16px;
+    }
+
+    .login {
+        height: 580px;
+    }
+}
+
+@media (max-width: 370px) {
+    .login h3 {
+        font-size: 2rem;
+    }
+
+    .input-box input {
+        width: 250px;
+    }
+
+    .remember-me label {
+        font-size: 12px;
+    }
+
+    #forgotpasswd {
+        font-size: 12px;
+    }
+
+    .input-submit input {
+        width: 220px;
+    }
+
+    .remember-and-forgot {
+        gap: 50px;
+    }
 }

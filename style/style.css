@@ -18,7 +18,6 @@ html {
 
 body {
     background: #000;
-    overflow-x: hidden;
 }
 
 .header {
@@ -117,11 +116,16 @@ section {
 
 .hero .hero-image {
     width: 35%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero .hero-content img {
-    height: 100%;
     width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .hero-content .colored-text {
@@ -311,10 +315,9 @@ section {
     margin: 0px 5px;
 }
 
-.customer-reviews .review-text {
-    color: rgb(255, 112, 87);
-    font-family: "Poppins", sans-serif;
-    transform: scale(1.3);
+#review-h3 {
+    color: tomato;
+    font-size: 5.5rem;
 }
 
 .pricing {
@@ -482,5 +485,328 @@ footer {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header a {
+        font-size: 16px;
+    }
+
+    .hero {
+        height: 700px;
+    }
+
+    .hero h3 {
+        font-size: 3rem;
+        width: 100%;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero-image img {
+        display: none;
+    }
+
+    .hero-image {
+        display: none;
+        width: 0%;
+    }
+
+    .max-width {
+        justify-content: center;
+        text-align: center;
+        max-width: 100vh;
+    }
+
+    .reviews-container p {
+        display: flex;
+        flex-direction: column;
+        font-size: 13px;
+    }
+
+    .reviews-container i {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.3rem;
+    }
+
+    .reviews-container {
+        width: 620px;
+        height: 350px;
+    }
+
+    .product {
+        width: 600px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .contact {
+        height: 100%;
+    }
+
+    .map-container {
+        order: 2;
+    }
+
+    .contact-container {
+        order: 1;
+    }
+
+    footer {
+        position: static
+    }
+}
+
+@media (max-width: 1455px) {
+    .hero .hero-image img {
+        width: 0%;
+        display: none;
+    }
+}
+
+@media (max-width: 1355px) {
+    .our-offer {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .offer-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .our-offer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .offer-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+@media (max-width: 1110px) {
+    .hero {
+        height: 700px;
+    }
+
+    .hero h3 {
+        font-size: 5rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 970px) {
+    .hero {
+        height: 700px;
+    }
+
+    .hero h3 {
+        font-size: 4.5rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero {
+        height: 900px;
+    }
+
+    .hero h3 {
+        font-size: 3.3rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 870px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 733px) {
+    .hero h3 {
+        font-size: 2.5rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 914px) {
+    .product {
+        width: 550px;
+    }
+}
+
+@media (max-width: 855px) {
+    .product {
+        width: 550px;
+    }
+
+    .map-container iframe {
+        width: 500px;
+    }
+}
+
+@media (max-width: 565px) {
+    .product {
+        width: 500px;
+    }
+
+    .map-container iframe {
+        width: 500px;
+    }
+}
+
+@media (max-width: 375px) {
+    .product {
+        width: 350px;
+    }
+
+    .map-container iframe {
+        width: 300px;
+        height: 300px;
+    }
+
+    .reviews-container p {
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+    }
+
+    .reviews-container i {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.7rem;
+    }
+
+    .reviews-container {
+        width: 620px;
+        height: 300px;
+    }
+
+    .review-big {
+        transform: scale(1.02);
+    }
+}
+
+@media (max-width: 561px) {
+    .product {
+        font-size: 0.9rem;
+        width: 320px;
+    }
+}
+
+@media (max-width: 320px) {
+    .product {
+        font-size: 0.6rem;
+        width: 275px;
+    }
+
+    #review-h3 {
+        font-size: 4rem;
+    }
+
+    .offer-box {
+        width: 250px;
+        height: 250px;
+    }
+
+    .hero-content h3 {
+        font-size: 50px;
+    }
+
+    .hero-content p {
+        display: none;
+    }
+}
+
+@media (max-width: 535px) {
+    .map-container iframe {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 450px) {
+    .offer-box {
+        width: 240px;
+        height: 240px;
+    }
+}
+
+@media (max-width: 622px) {
+    .hero h3{
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 580px) {
+    .hero h3{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 553px) {
+    .hero h3{
+        font-size: 1.5rem;
+    }
+    .hero p {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .hero h3{
+        font-size: 3rem;
+    }
+    .hero p {
+        display: none;
     }
 }
