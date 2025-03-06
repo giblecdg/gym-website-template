@@ -212,6 +212,12 @@ footer {
     font-weight: 850;
 }
 
+@media (max-width: 870px) {
+    .header {
+        position: static;
+    }
+}
+
 @media (max-width: 768px) {
     .navbar {
         display: flex;

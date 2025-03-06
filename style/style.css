@@ -668,6 +668,7 @@ footer {
         gap: 10px;
         justify-content: center;
         text-align: center;
+        position: static;
     }
 
     .header a {
@@ -842,7 +843,7 @@ footer {
 }
 
 @media (max-height: 495px) {
-    .hero p{
+    .hero p {
         display: none;
     }
 }
