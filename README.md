@@ -1,7 +1,3 @@
-# Creating the README file in markdown format
-
-readme_content = """
-
 # YOUR GYM Website
 
 A modern, responsive gym website showcasing various services, pricing, customer reviews, and contact information. This website is designed to provide users with a seamless browsing experience, helping them discover everything they need to know about the gym before joining.
