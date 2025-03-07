@@ -292,3 +292,9 @@ footer {
         text-align: center;
     }
 }
+
+@media (max-width: 1455px) {
+    footer {
+        position: static;
+    }
+}
